@@ -1,0 +1,87 @@
+[
+    {
+        "file": "truecare.jpg",
+        "project": "TrueCare Cleaning",
+        "url": "https://truecarecleaning.vercel.app/assets/images/IMG_6575.jpeg",
+        "retrieved_date": "2026-11-02",
+        "kind": "original project photograph, not a website screenshot",
+        "source_width": 1179,
+        "source_height": 2014,
+        "width": 1179,
+        "height": 2014,
+        "jpeg_quality": 82,
+        "bytes": 248855
+    },
+    {
+        "file": "jk-pool-house.jpg",
+        "project": "JK Pool House",
+        "url": "https://jkpoolhouse.com.br/imagens/piscina_com_hidro.jpg",
+        "retrieved_date": "2026-11-02",
+        "kind": "original project photograph, not a website screenshot",
+        "source_width": 960,
+        "source_height": 1280,
+        "width": 960,
+        "height": 1280,
+        "jpeg_quality": 82,
+        "bytes": 161256
+    },
+    {
+        "file": "imperio.jpg",
+        "project": "Império Moda Feminina",
+        "url": "https://imperiomodasfemininas.com.br/imagens/03%20biquini%20asa%20delta.jpeg",
+        "retrieved_date": "2026-11-02",
+        "kind": "original project photograph, not a website screenshot",
+        "source_width": 1280,
+        "source_height": 1270,
+        "width": 1280,
+        "height": 1270,
+        "jpeg_quality": 82,
+        "bytes": 195049
+    },
+    {
+        "file": "n1-next-level.webp",
+        "project": "N1 Next Level Construction",
+        "url": "https://www.n1nextlevel.com/assets/images/services/dormer-plywood-sheathing-and-roof-joists.webp",
+        "retrieved_date": "2026-11-02",
+        "kind": "original project photograph, not a website screenshot",
+        "source_width": 900,
+        "source_height": 1200,
+        "width": 900,
+        "height": 1200,
+        "bytes": 137486
+    },
+    {
+        "file": "desentope-mais.jpg",
+        "project": "Desentope Mais",
+        "url": "https://desentopemaiscampinas.vercel.app/imagens/desentupimento_4.jpeg",
+        "retrieved_date": "2026-11-02",
+        "kind": "original project photograph, not a website screenshot",
+        "source_width": 720,
+        "source_height": 1600,
+        "width": 720,
+        "height": 1600,
+        "bytes": 69911
+    },
+    {
+        "file": "help-all.svg",
+        "project": "HELP ALL",
+        "url": "https://helpall-delta.vercel.app/assets/logo.svg",
+        "retrieved_date": "2026-11-02",
+        "kind": "original project logo, not a website screenshot",
+        "width": 128,
+        "height": 128,
+        "bytes": 914
+    },
+    {
+        "file": "hitomi-odontologia.webp",
+        "project": "Hitomí Odontologia",
+        "url": "https://hitomiodontologia.com.br/wp-content/uploads/2024/06/casal-sorrindo.webp",
+        "retrieved_date": "2026-11-02",
+        "kind": "original photograph used on the published Vercel demo, not a website screenshot",
+        "source_width": 800,
+        "source_height": 830,
+        "width": 800,
+        "height": 830,
+        "bytes": 231488
+    }
+]

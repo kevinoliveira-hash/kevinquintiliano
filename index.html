@@ -1,1668 +1,200 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Kevin Quintiliano Tecnologia — sites, landing pages e soluções digitais sob medida para empresas que querem transformar sua presença online e evoluir através da tecnologia.">
-
-    <meta name="keywords"
-        content="criação de sites, landing page, desenvolvimento web, inteligência artificial, automação, tecnologia, São Paulo, Londres">
-
-    <meta name="author" content="Kevin Quintiliano Tecnologia">
-
-    <meta property="og:title" content="Kevin Quintiliano Tecnologia">
-    <meta property="og:description"
-        content="Tecnologia que simplifica. Negócios que evoluem.">
+    <meta name="theme-color" content="#070706">
+    <meta name="description" content="KQ Tecnologia is Kevin Quintiliano's independent technology studio. Bespoke websites, digital experiences and practical solutions for businesses in the UK and Brazil.">
+    <meta name="author" content="Kevin Quintiliano — KQ Tecnologia">
+    <meta property="og:title" content="KQ Tecnologia | Digital Experiences. Real Business Impact.">
+    <meta property="og:description" content="Independent thinking. Purposeful design. Websites and digital solutions for businesses in the UK and Brazil.">
     <meta property="og:type" content="website">
-
-    <title>Kevin Quintiliano Tecnologia | Tecnologia que simplifica</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:url" content="https://kevinquintiliano.vercel.app/">
+    <meta property="og:site_name" content="KQ Tecnologia">
+    <meta property="og:image" content="https://kevinquintiliano.vercel.app/imagens/kq-tecnologia-dourado.png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="KQ Tecnologia — Kevin Quintiliano's technology studio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KQ Tecnologia | Digital Experiences. Real Business Impact.">
+    <meta name="twitter:description" content="Bespoke websites and practical digital solutions for businesses in the UK and Brazil.">
+    <meta name="twitter:image" content="https://kevinquintiliano.vercel.app/imagens/kq-tecnologia-dourado.png">
+    <title>KQ Tecnologia | Digital Experiences. Real Business Impact.</title>
+    <link rel="canonical" href="https://kevinquintiliano.vercel.app/">
+    <link rel="icon" type="image/png" href="imagens/kq-tecnologia-dourado.png">
+    <link rel="apple-touch-icon" href="imagens/kq-tecnologia-dourado.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- =========================
-         BACKGROUND EFFECTS
-    ========================== -->
-
-    <div class="background-grid"></div>
-
-    <div class="glow glow-one"></div>
-    <div class="glow glow-two"></div>
-
-
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-
+    <a href="#inicio" class="skip-link" data-i18n="access.skip">Skip to content</a>
+    <!-- Existing section anchors and contact hooks are retained for shared links. -->
     <header class="navbar">
-
         <div class="container nav-container">
-
-            <a href="#inicio" class="brand">
-
-                <div class="brand-symbol">
-                    K<span>Q</span>
-                </div>
-
-                <div class="brand-name">
-                    <strong>KEVIN QUINTILIANO</strong>
-                    <small>TECNOLOGIA</small>
-                </div>
-
+            <a href="#inicio" class="brand" aria-label="KQ Tecnologia — home" data-i18n-aria="access.home">
+                <span class="brand-mark" aria-hidden="true"><img src="imagens/kq-tecnologia-dourado.png" alt="" width="1254" height="1254"></span>
+                <span class="brand-name"><strong>KQ</strong><small>TECNOLOGIA</small></span>
             </a>
-
-
-            <nav class="desktop-nav">
-
-                <a href="#solucoes">Soluções</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#processo">Processo</a>
-                <a href="#sobre">Sobre</a>
-
-                <a href="#orcamento" class="nav-button">
-                    Solicitar orçamento
-                </a>
-
+            <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria="access.navigation">
+                <a href="#projetos" data-i18n="nav.work">Work</a><a href="#sobre" data-i18n="nav.about">About</a><a href="#solucoes" data-i18n="nav.services">Services</a><a href="#processo" data-i18n="nav.process">Process</a>
             </nav>
-
-
-            <button class="menu-button" id="menuButton">
-                ☰
-            </button>
-
+            <div class="nav-actions">
+                <div class="language-switch" role="group" aria-label="Choose language" data-i18n-aria="access.language">
+                    <button type="button" data-language="en" class="is-active" aria-pressed="true" aria-label="English" lang="en">EN</button><span aria-hidden="true">/</span><button type="button" data-language="pt" aria-pressed="false" aria-label="Português" lang="pt-BR">PT</button>
+                </div>
+                <a href="#orcamento" class="nav-button"><span data-i18n="nav.contact">Let's talk</span><span aria-hidden="true">↗</span></a>
+                <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" data-i18n-aria="access.menuOpen" aria-expanded="false" aria-controls="mobileMenu"><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
+            </div>
         </div>
-
-
-        <div class="mobile-menu" id="mobileMenu">
-
-            <a href="#solucoes">Soluções</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#processo">Processo</a>
-            <a href="#sobre">Sobre</a>
-
-            <a href="#orcamento" class="mobile-cta">
-                Solicitar orçamento
-            </a>
-
-        </div>
-
+        <div class="mobile-overlay" id="mobileOverlay" hidden aria-hidden="true"></div>
+        <nav class="mobile-menu" id="mobileMenu" hidden aria-label="Mobile navigation" data-i18n-aria="access.mobileNavigation"><div class="mobile-menu-header"><span class="section-label" data-i18n="nav.explore">EXPLORE THE STUDIO</span></div><a href="#projetos" data-i18n="nav.work">Work</a><a href="#sobre" data-i18n="nav.about">About</a><a href="#solucoes" data-i18n="nav.services">Services</a><a href="#processo" data-i18n="nav.process">Process</a><div class="mobile-menu-footer"><a href="#orcamento" class="button button-primary" data-i18n="nav.contact">Let's talk</a></div></nav>
     </header>
-
-
-
-    <main id="inicio">
-
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
-        <section class="hero section">
-
+    <main id="inicio" tabindex="-1">
+        <section class="hero section" aria-labelledby="hero-title">
             <div class="container hero-grid">
-
-
                 <div class="hero-content">
-
-                    <div class="eyebrow">
-                        <span></span>
-                        SOLUÇÕES DIGITAIS SOB MEDIDA
-                    </div>
-
-
-                    <h1>
-                        Tecnologia que
-                        <span>simplifica.</span>
-                        <br>
-                        Negócios que evoluem.
-                    </h1>
-
-
-                    <p class="hero-description">
-
-                        Criamos sites, landing pages e soluções digitais
-                        sob medida para empresas que querem transformar
-                        sua presença online, melhorar seus processos e
-                        aproveitar melhor a tecnologia.
-
-                    </p>
-
-
-                    <div class="hero-buttons">
-
-                        <a href="#orcamento" class="button button-primary">
-                            Solicitar um orçamento
-                            <span>→</span>
-                        </a>
-
-                        <a href="#projetos" class="button button-secondary">
-                            Conhecer projetos
-                        </a>
-
-                    </div>
-
-
-                    <div class="hero-services">
-
-                        <span>DESIGN</span>
-                        <span>DESENVOLVIMENTO</span>
-                        <span>IA</span>
-                        <span>AUTOMAÇÃO</span>
-
-                    </div>
-
+                    <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.eyebrow">INDEPENDENT MIND. DIGITAL CRAFT.</span></div>
+                    <p class="founder-line"><strong>KEVIN QUINTILIANO</strong><span data-i18n="hero.founder">Founder of KQ Tecnologia</span></p>
+                    <h1 id="hero-title"><span data-i18n="hero.titleFirst">Digital Experiences.</span><br><span class="accent-text" data-i18n="hero.titleSecond">Real Business Impact.</span></h1>
+                    <p class="hero-description" data-i18n="hero.description">I create modern websites, digital experiences and practical technology solutions that help businesses build a stronger online presence and grow.</p>
+                    <div class="hero-buttons"><a href="#projetos" class="button button-primary"><span data-i18n="hero.explore">Explore My Work</span><span aria-hidden="true">↗</span></a><a href="#orcamento" class="button button-secondary"><span data-i18n="hero.contact">Let's Work Together</span><span aria-hidden="true">→</span></a></div>
+                    <div class="hero-services"><span data-i18n="hero.skillDesign">DESIGN</span><span aria-hidden="true">/</span><span data-i18n="hero.skillDevelopment">DEVELOPMENT</span><span aria-hidden="true">/</span><span data-i18n="hero.skillSolutions">DIGITAL SOLUTIONS</span></div>
                 </div>
-
-
-
-                <!-- HERO VISUAL -->
-
                 <div class="hero-visual">
-
-                    <div class="orb"></div>
-
-                    <div class="tech-card card-main">
-
-                        <div class="card-top">
-                            <span>KEVIN QUINTILIANO</span>
-                            <span>01</span>
-                        </div>
-
-
-                        <div class="kq-symbol">
-                            KQ
-                        </div>
-
-
-                        <div class="card-bottom">
-
-                            <div>
-                                <small>DIGITAL</small>
-                                <strong>SOLUTIONS</strong>
-                            </div>
-
-                            <div class="status">
-                                <span></span>
-                                ONLINE
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="floating-card floating-one">
-                        <span>WEB</span>
-                        <strong>01</strong>
-                    </div>
-
-
-                    <div class="floating-card floating-two">
-                        <span>AI</span>
-                        <strong>∞</strong>
-                    </div>
-
-
-                    <div class="floating-card floating-three">
-                        <span>CODE</span>
-                        <strong>&lt;/&gt;</strong>
-                    </div>
-
+                    <!-- Original KQ Tecnologia logo, displayed in full. -->
+                    <div class="studio-art"><span class="art-coordinate" aria-hidden="true">KQ — DIGITAL STUDIO</span><img class="studio-art-mark" src="imagens/kq-tecnologia-dourado.png" alt="KQ Tecnologia brand artwork" data-i18n-alt="image.monogram" width="1254" height="1254" fetchpriority="high" decoding="async"><div class="art-signature"><span data-i18n="hero.artCaption">THOUGHTFULLY BUILT.</span><span data-i18n="hero.artCaptionSecond">MADE TO MATTER.</span></div></div>
                 </div>
-
             </div>
-
-
-            <div class="hero-scroll">
-
-                <span></span>
-                SCROLL PARA EXPLORAR
-
-            </div>
-
+            <div class="container hero-bottom"><p class="location-line"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span data-i18n="hero.location">BRAZIL & UNITED KINGDOM</span></p><a class="hero-scroll" href="#projetos"><span data-i18n="hero.scroll">SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></a><span class="hero-bottom-note" data-i18n="hero.note">Good design starts with understanding.</span></div>
         </section>
+        <section class="trust-section" aria-label="Studio approach" data-i18n-aria="access.approach"><div class="container trust-inner"><p class="trust-caption" data-i18n="trust.caption">SMALL STUDIO. PERSONAL COMMITMENT.</p><div class="countries"><span data-i18n="trust.first">Business understanding</span><i aria-hidden="true">·</i><span data-i18n="trust.second">Thoughtful design</span><i aria-hidden="true">·</i><span data-i18n="trust.third">Practical technology</span></div></div></section>
 
-
-
-        <!-- =========================
-             TRUST
-        ========================== -->
-
-        <section class="trust-section">
-
+        <section class="projects section" id="projetos" aria-labelledby="work-title">
             <div class="container">
-
-                <p>EXPERIÊNCIA COM PROJETOS NO</p>
-
-                <div class="countries">
-
-                    <span>BRASIL</span>
-                    <i>·</i>
-
-                    <span>ESTADOS UNIDOS</span>
-                    <i>·</i>
-
-                    <span>PORTUGAL</span>
-                    <i>·</i>
-
-                    <span>ESPANHA</span>
-                    <i>·</i>
-
-                    <span>REINO UNIDO</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PROBLEMA
-        ========================== -->
-
-        <section class="problem section">
-
-            <div class="container narrow">
-
-                <div class="section-label">
-                    NOSSA VISÃO
-                </div>
-
-
-                <h2>
-                    Tecnologia deveria
-                    <span>facilitar.</span>
-                    <br>
-                    Não complicar.
-                </h2>
-
-
-                <p class="large-text">
-
-                    Seu negócio não precisa de mais uma ferramenta
-                    complicada.
-
-                    <br><br>
-
-                    Precisa de uma solução que faça sentido.
-
-                </p>
-
-
-                <p>
-
-                    Seja para criar sua presença digital, modernizar
-                    um site, integrar sistemas, automatizar processos
-                    ou descobrir como a inteligência artificial pode
-                    ajudar sua empresa, começamos pelo mesmo lugar:
-
-                </p>
-
-
-                <div class="highlight-text">
-                    Entender o que você realmente precisa.
-                </div>
-
-
-                <p>
-
-                    Você não precisa chegar com a solução pronta.
-
-                </p>
-
-
-                <div class="quote-box">
-
-                    <span>“</span>
-
-                    Você traz o desafio.
-                    <strong>Nós ajudamos a construir o caminho.</strong>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             SOLUÇÕES
-        ========================== -->
-
-        <section class="solutions section" id="solucoes">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div>
-
-                        <div class="section-label">
-                            O QUE FAZEMOS
-                        </div>
-
-                        <h2>
-                            Tecnologia para cada
-                            <span>etapa.</span>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Soluções digitais pensadas para diferentes
-                        necessidades, negócios e momentos.
-                    </p>
-
-                </div>
-
-
-
-                <div class="solutions-grid">
-
-
-                    <!-- SOLUÇÃO 01 -->
-
-                    <article class="solution-card">
-
-                        <div class="solution-number">
-                            01
-                        </div>
-
-                        <div class="solution-icon">
-                            ◇
-                        </div>
-
-                        <h3>
-                            Sites & Landing Pages
-                        </h3>
-
-                        <p>
-
-                            Experiências digitais rápidas,
-                            responsivas e estratégicas para
-                            apresentar sua empresa, gerar confiança
-                            e transformar visitantes em oportunidades.
-
-                        </p>
-
-
-                        <ul>
-
-                            <li>Landing Pages</li>
-                            <li>Sites institucionais</li>
-                            <li>Redesign</li>
-                            <li>WhatsApp</li>
-                            <li>SEO</li>
-                            <li>Performance</li>
-
-                        </ul>
-
-
-                        <a href="#orcamento">
-                            Quero criar meu site →
-                        </a>
-
-                    </article>
-
-
-
-                    <!-- SOLUÇÃO 02 -->
-
-                    <article class="solution-card">
-
-                        <div class="solution-number">
-                            02
-                        </div>
-
-                        <div class="solution-icon">
-                            ↗
-                        </div>
-
-                        <h3>
-                            Evolução Digital
-                        </h3>
-
-                        <p>
-
-                            Modernizamos estruturas digitais
-                            existentes para melhorar desempenho,
-                            experiência, integração e eficiência.
-
-                        </p>
-
-
-                        <ul>
-
-                            <li>Atualização de sites</li>
-                            <li>Migração de sistemas</li>
-                            <li>Bancos de dados</li>
-                            <li>APIs</li>
-                            <li>Integrações</li>
-                            <li>Otimização</li>
-
-                        </ul>
-
-
-                        <a href="#orcamento">
-                            Evoluir meu projeto →
-                        </a>
-
-                    </article>
-
-
-
-                    <!-- SOLUÇÃO 03 -->
-
-                    <article class="solution-card featured">
-
-                        <div class="solution-number">
-                            03
-                        </div>
-
-                        <div class="solution-icon">
-                            ✦
-                        </div>
-
-                        <h3>
-                            Inteligência & Automação
-                        </h3>
-
-                        <p>
-
-                            Aplicamos inteligência artificial e
-                            automação onde elas realmente podem
-                            gerar valor para sua empresa.
-
-                        </p>
-
-
-                        <ul>
-
-                            <li>Inteligência Artificial</li>
-                            <li>Automação</li>
-                            <li>Chatbots</li>
-                            <li>Assistentes inteligentes</li>
-                            <li>APIs</li>
-                            <li>Processos inteligentes</li>
-
-                        </ul>
-
-
-                        <a href="#orcamento">
-                            Explorar possibilidades →
-                        </a>
-
-                    </article>
-
-
-
-                    <!-- SOLUÇÃO 04 -->
-
-                    <article class="solution-card">
-
-                        <div class="solution-number">
-                            04
-                        </div>
-
-                        <div class="solution-icon">
-                            ◉
-                        </div>
-
-                        <h3>
-                            Consultoria
-                        </h3>
-
-                        <p>
-
-                            Você não precisa saber qual tecnologia
-                            usar. Analisamos seu cenário e ajudamos
-                            a encontrar o melhor caminho.
-
-                        </p>
-
-
-                        <ul>
-
-                            <li>Diagnóstico</li>
-                            <li>Estratégia digital</li>
-                            <li>IA</li>
-                            <li>Automação</li>
-                            <li>Ferramentas</li>
-                            <li>Estratégia tecnológica</li>
-
-                        </ul>
-
-
-                        <a href="#orcamento">
-                            Conversar com especialista →
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             FILOSOFIA
-        ========================== -->
-
-        <section class="philosophy section" id="sobre">
-
-            <div class="container philosophy-grid">
-
-                <div>
-
-                    <div class="section-label">
-                        NOSSA FILOSOFIA
-                    </div>
-
-                    <h2>
-                        Você entende do seu negócio.
-                        <span>Nós entendemos de tecnologia.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="philosophy-content">
-
-                    <p class="large-text">
-
-                        Não acreditamos em tecnologia pela tecnologia.
-
-                    </p>
-
-                    <p>
-
-                        Acreditamos em soluções que tornam as
-                        coisas mais simples.
-
-                        <br><br>
-
-                        Por isso, cada projeto começa com uma conversa.
-
-                        <br><br>
-
-                        Entendemos o problema, analisamos as
-                        possibilidades e só então definimos a
-                        tecnologia necessária.
-
-                    </p>
-
-
-                    <div class="big-statement">
-
-                        Porque a melhor solução nem sempre
-                        é a mais complexa.
-
-                        <strong>É a que resolve.</strong>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             DIFERENCIAIS
-        ========================== -->
-
-        <section class="differentials section">
-
-            <div class="container">
-
-                <div class="section-label">
-                    POR QUE NÓS
-                </div>
-
-                <h2>
-                    Fazemos o
-                    <span>simples</span> bem feito.
-                </h2>
-
-
-                <div class="differentials-grid">
-
-
-                    <div class="differential">
-
-                        <span>01</span>
-
-                        <h3>Sob medida</h3>
-
-                        <p>
-                            Cada negócio possui necessidades
-                            diferentes. Criamos soluções de acordo
-                            com o contexto e objetivo de cada projeto.
-                        </p>
-
-                    </div>
-
-
-                    <div class="differential">
-
-                        <span>02</span>
-
-                        <h3>Performance</h3>
-
-                        <p>
-                            Sites rápidos, responsivos e preparados
-                            para oferecer uma experiência consistente.
-                        </p>
-
-                    </div>
-
-
-                    <div class="differential">
-
-                        <span>03</span>
-
-                        <h3>Conversão</h3>
-
-                        <p>
-                            Design e estrutura pensados para
-                            conduzir o visitante à próxima ação.
-                        </p>
-
-                    </div>
-
-
-                    <div class="differential">
-
-                        <span>04</span>
-
-                        <h3>Proximidade</h3>
-
-                        <p>
-                            Você acompanha o projeto de perto,
-                            com comunicação clara durante todo
-                            o processo.
-                        </p>
-
-                    </div>
-
-
-                    <div class="differential">
-
-                        <span>05</span>
-
-                        <h3>Tecnologia</h3>
-
-                        <p>
-                            Escolhemos as ferramentas de acordo
-                            com o problema — e não o contrário.
-                        </p>
-
-                    </div>
-
-
-                    <div class="differential">
-
-                        <span>06</span>
-
-                        <h3>Evolução</h3>
-
-                        <p>
-                            Sua solução pode continuar evoluindo
-                            conforme seu negócio cresce.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PROJETOS
-        ========================== -->
-
-        <section class="projects section" id="projetos">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div>
-
-                        <div class="section-label">
-                            PORTFÓLIO
-                        </div>
-
-                        <h2>
-                            Projetos que
-                            <span>saíram do papel.</span>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Tecnologia aplicada a necessidades reais.
-                    </p>
-
-                </div>
-
-
+                <div class="section-header"><div><p class="section-label" data-i18n="work.label">01 / SELECTED WORK</p><h2 id="work-title"><span data-i18n="work.title">Different businesses.</span><br><span class="accent-text" data-i18n="work.titleAccent">The same attention to detail.</span></h2></div><p data-i18n="work.intro">Published websites and digital projects, each shaped around a different audience and purpose.</p></div>
+                <!-- Add published work here, with its Portuguese copy in translations.pt. -->
                 <div class="projects-grid">
-
-
-                    <article class="project-card project-large">
-
-                        <div class="project-image">
-
-                            <div class="mockup">
-
-                                <div class="mockup-bar">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-
-                                <div class="mockup-content">
-
-                                    <small>
-                                        MOSHE SISTEMAS
-                                    </small>
-
-                                    <strong>
-                                        SOLUÇÕES
-                                        <br>
-                                        INTEGRADAS.
-                                    </strong>
-
-                                    <div class="mockup-line"></div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-info">
-
-                            <span>
-                                SOLUÇÃO DIGITAL
-                            </span>
-
-                            <h3>
-                                Moshe Sistemas Integrados
-                            </h3>
-
-                            <p>
-                                Projeto desenvolvido para apoiar
-                                a presença e estrutura digital da empresa.
-                            </p>
-
-                            <a href="#orcamento">
-                                Ver projeto →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-
                     <article class="project-card">
-
-                        <div class="project-image second">
-
-                            <div class="project-placeholder">
-                                UMBRELLA
-                            </div>
-
-                        </div>
-
-
+                        <a class="project-image " href="https://www.n1nextlevel.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit N1 Next Level Construction website (opens in a new tab)" data-i18n-aria="work.n1Link"><img src="imagens/projetos/n1-next-level.webp" alt="Roof extension work by N1 Next Level Construction" data-i18n-alt="image.n1" width="900" height="1200" loading="lazy" decoding="async"></a>
                         <div class="project-info">
-
-                            <span>
-                                SOLUÇÃO DIGITAL
-                            </span>
-
-                            <h3>
-                                Umbrella Corretora
-                            </h3>
-
-                            <p>
-                                Experiência digital desenvolvida
-                                para apresentar a empresa de forma
-                                profissional.
-                            </p>
-
-                            <a href="#orcamento">
-                                Ver projeto →
-                            </a>
-
+                            <div class="project-meta"><span data-i18n="work.n1Category">CONSTRUCTION WEBSITE / LONDON</span><span class="project-index">01</span></div>
+                            <h3>N1 Next Level Construction</h3>
+                            <p data-i18n="work.n1Description">An English-language website for a London construction company, bringing building services, completed work and quote enquiries together.</p>
+                            <a class="project-link" href="https://www.n1nextlevel.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="work.visit">Visit website</span><span aria-hidden="true">↗</span><span class="sr-only" data-i18n="work.n1Suffix"> — N1 Next Level Construction (opens in a new tab)</span></a>
                         </div>
-
                     </article>
-
-
-
                     <article class="project-card">
-
-                        <div class="project-image third">
-
-                            <div class="project-placeholder">
-                                APRIL
-                            </div>
-
-                        </div>
-
-
+                        <a class="project-image " href="https://jkpoolhouse.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Visit JK Pool House website (opens in a new tab)" data-i18n-aria="work.jkLink"><img src="imagens/projetos/jk-pool-house.jpg" alt="Pool and event space featured on the JK Pool House website" data-i18n-alt="image.jk" width="960" height="1280" loading="lazy" decoding="async"></a>
                         <div class="project-info">
-
-                            <span>
-                                SOLUÇÃO DIGITAL
-                            </span>
-
-                            <h3>
-                                April Insurances
-                            </h3>
-
-                            <p>
-                                Projeto desenvolvido com foco em
-                                experiência digital e comunicação.
-                            </p>
-
-                            <a href="#orcamento">
-                                Ver projeto →
-                            </a>
-
+                            <div class="project-meta"><span data-i18n="work.jkCategory">COMPANY WEBSITE / BRAZIL</span><span class="project-index">02</span></div>
+                            <h3>JK Pool House</h3>
+                            <p data-i18n="work.jkDescription">A visual introduction to a pool and events venue, bringing the space, information and booking contact together.</p>
+                            <a class="project-link" href="https://jkpoolhouse.com.br/" target="_blank" rel="noopener noreferrer"><span data-i18n="work.visit">Visit website</span><span aria-hidden="true">↗</span><span class="sr-only" data-i18n="work.jkSuffix"> — JK Pool House (opens in a new tab)</span></a>
                         </div>
-
                     </article>
-
-                </div>
-
-
-                <div class="projects-cta">
-
-                    <p>
-                        Seu projeto pode ser o próximo.
-                    </p>
-
-                    <a href="#orcamento" class="button button-primary">
-                        Solicitar um orçamento →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PROCESSO
-        ========================== -->
-
-        <section class="process section" id="processo">
-
-            <div class="container">
-
-                <div class="section-label">
-                    COMO FUNCIONA
-                </div>
-
-                <h2>
-                    Da ideia à solução.
-                    <br>
-                    <span>Da solução à evolução.</span>
-                </h2>
-
-
-                <div class="process-grid">
-
-
-                    <div class="process-item">
-
-                        <span>01</span>
-
-                        <h3>Você conta</h3>
-
-                        <p>
-                            Tudo começa com uma conversa.
-                            Você nos conta sobre sua empresa,
-                            desafio e objetivo.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-item">
-
-                        <span>02</span>
-
-                        <h3>Nós entendemos</h3>
-
-                        <p>
-                            Analisamos suas necessidades,
-                            objetivos e possibilidades.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-item">
-
-                        <span>03</span>
-
-                        <h3>Desenhamos</h3>
-
-                        <p>
-                            Definimos estrutura, experiência,
-                            tecnologia e prioridades.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-item">
-
-                        <span>04</span>
-
-                        <h3>Construímos</h3>
-
-                        <p>
-                            Design, desenvolvimento,
-                            integrações e testes.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-item">
-
-                        <span>05</span>
-
-                        <h3>Entregamos</h3>
-
-                        <p>
-                            Validamos todos os detalhes
-                            e colocamos a solução para funcionar.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-item">
-
-                        <span>06</span>
-
-                        <h3>Evoluímos</h3>
-
-                        <p>
-                            Sua empresa cresce.
-                            E sua tecnologia pode crescer junto.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PACOTES
-        ========================== -->
-
-        <section class="packages section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div>
-
-                        <div class="section-label">
-                            SOLUÇÕES
+                    <article class="project-card">
+                        <a class="project-image project-image--desentope" href="https://desentopemaiscampinas.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Desentope Mais Campinas website (opens in a new tab)" data-i18n-aria="work.desentopeLink"><img src="imagens/projetos/desentope-mais.jpg" alt="Desentope Mais team carrying out high-pressure drain cleaning" data-i18n-alt="image.desentope" width="720" height="1600" loading="lazy" decoding="async"></a>
+                        <div class="project-info">
+                            <div class="project-meta"><span data-i18n="work.desentopeCategory">LOCAL SERVICES / CAMPINAS</span><span class="project-index">03</span></div>
+                            <h3>Desentope Mais Campinas</h3>
+                            <p data-i18n="work.desentopeDescription">A local service website for drain cleaning, with services, frequently asked questions and direct phone and WhatsApp contact.</p>
+                            <a class="project-link" href="https://desentopemaiscampinas.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="work.visit">Visit website</span><span aria-hidden="true">↗</span><span class="sr-only" data-i18n="work.desentopeSuffix"> — Desentope Mais Campinas (opens in a new tab)</span></a>
                         </div>
-
-                        <h2>
-                            Encontre seu
-                            <span>ponto de partida.</span>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Cada projeto é diferente.
-                        Estes são alguns caminhos possíveis.
-                    </p>
-
-                </div>
-
-
-                <div class="packages-grid">
-
-
-                    <article class="package">
-
-                        <span class="package-label">
-                            ESSENCIAL
-                        </span>
-
-                        <h3>
-                            Para começar.
-                        </h3>
-
-                        <p>
-                            Uma presença digital profissional
-                            para quem precisa colocar sua empresa
-                            no lugar certo.
-                        </p>
-
-                        <ul>
-
-                            <li>Landing page</li>
-                            <li>Design personalizado</li>
-                            <li>Responsividade</li>
-                            <li>WhatsApp</li>
-                            <li>Formulário</li>
-                            <li>SEO básico</li>
-                            <li>Publicação</li>
-
-                        </ul>
-
-                        <a href="#orcamento">
-                            Solicitar orçamento →
-                        </a>
-
                     </article>
-
-
-
-                    <article class="package package-featured">
-
-                        <div class="popular">
-                            MAIS PROCURADO
+                    <article class="project-card">
+                        <a class="project-image " href="https://truecarecleaning.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit TrueCare Cleaning website (opens in a new tab)" data-i18n-aria="work.truecareLink"><img src="imagens/projetos/truecare.jpg" alt="Bedroom featured on the TrueCare Cleaning website" data-i18n-alt="image.truecare" width="1179" height="2014" loading="lazy" decoding="async"></a>
+                        <div class="project-info">
+                            <div class="project-meta"><span data-i18n="work.truecareCategory">SERVICE WEBSITE / LONDON</span><span class="project-index">04</span></div>
+                            <h3>TrueCare Cleaning</h3>
+                            <p data-i18n="work.truecareDescription">A clear, welcoming online presence for home and short-let cleaning, with services and enquiries easy to find.</p>
+                            <a class="project-link" href="https://truecarecleaning.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="work.visit">Visit website</span><span aria-hidden="true">↗</span><span class="sr-only" data-i18n="work.truecareSuffix"> — TrueCare Cleaning (opens in a new tab)</span></a>
                         </div>
-
-                        <span class="package-label">
-                            PROFISSIONAL
-                        </span>
-
-                        <h3>
-                            Para crescer.
-                        </h3>
-
-                        <p>
-                            Uma presença digital completa para
-                            empresas que querem apresentar sua
-                            marca com mais profissionalismo.
-                        </p>
-
-                        <ul>
-
-                            <li>Site institucional</li>
-                            <li>Design personalizado</li>
-                            <li>Estrutura estratégica</li>
-                            <li>SEO</li>
-                            <li>Performance</li>
-                            <li>WhatsApp</li>
-                            <li>Analytics</li>
-                            <li>Integrações</li>
-
-                        </ul>
-
-                        <a href="#orcamento">
-                            Solicitar orçamento →
-                        </a>
-
                     </article>
-
-
-
-                    <article class="package">
-
-                        <span class="package-label">
-                            SOB MEDIDA
-                        </span>
-
-                        <h3>
-                            Para ir além.
-                        </h3>
-
-                        <p>
-                            Quando o projeto exige mais do que
-                            um site.
-                        </p>
-
-                        <ul>
-
-                            <li>Sistemas personalizados</li>
-                            <li>Integrações</li>
-                            <li>APIs</li>
-                            <li>Automação</li>
-                            <li>Inteligência artificial</li>
-                            <li>Migração de sistemas</li>
-                            <li>Bancos de dados</li>
-
-                        </ul>
-
-                        <a href="#orcamento">
-                            Falar sobre meu projeto →
-                        </a>
-
+                    <article class="project-card">
+                        <a class="project-image " href="https://imperiomodasfemininas.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Visit Império Moda Feminina website (opens in a new tab)" data-i18n-aria="work.imperioLink"><img src="imagens/projetos/imperio.jpg" alt="Fashion collection featured on the Império Moda Feminina website" data-i18n-alt="image.imperio" width="1280" height="1270" loading="lazy" decoding="async"></a>
+                        <div class="project-info">
+                            <div class="project-meta"><span data-i18n="work.imperioCategory">FASHION E-COMMERCE / BRAZIL</span><span class="project-index">05</span></div>
+                            <h3>Império Moda Feminina</h3>
+                            <p data-i18n="work.imperioDescription">A fashion storefront that brings the collection into focus and makes discovering products feel effortless.</p>
+                            <a class="project-link" href="https://imperiomodasfemininas.com.br/" target="_blank" rel="noopener noreferrer"><span data-i18n="work.visit">Visit website</span><span aria-hidden="true">↗</span><span class="sr-only" data-i18n="work.imperioSuffix"> — Império Moda Feminina (opens in a new tab)</span></a>
+                        </div>
                     </article>
-
+                    <article class="project-card">
+                        <a class="project-image project-image--contain" href="https://helpall-delta.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Explore the HELP ALL community pilot (opens in a new tab)" data-i18n-aria="work.helpallLink"><img src="imagens/projetos/help-all.svg" alt="HELP ALL community project logo" data-i18n-alt="image.helpall" width="128" height="128" loading="lazy" decoding="async"></a>
+                        <div class="project-info">
+                            <div class="project-meta"><span data-i18n="work.helpallCategory">COMMUNITY PROJECT / PILOT</span><span class="project-index">06</span></div>
+                            <h3>HELP ALL</h3>
+                            <p data-i18n="work.helpallDescription">A community app pilot connecting people, local services and initiatives, with a service catalogue, favourites and demo HelpCoins.</p>
+                            <a class="project-link" href="https://helpall-delta.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="work.visit">Visit website</span><span aria-hidden="true">↗</span><span class="sr-only" data-i18n="work.helpallSuffix"> — HELP ALL community pilot (opens in a new tab)</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <a class="project-image " href="https://hitomiodontologia.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Hitomí Odontologia website demo (opens in a new tab)" data-i18n-aria="work.hitomiLink"><img src="imagens/projetos/hitomi-odontologia.webp" alt="Smiling couple featured on the Hitomí Odontologia website" data-i18n-alt="image.hitomi" width="800" height="830" loading="lazy" decoding="async"></a>
+                        <div class="project-info">
+                            <div class="project-meta"><span data-i18n="work.hitomiCategory">WEBSITE DEMO / DENTISTRY</span><span class="project-index">07</span></div>
+                            <h3>Hitomí Odontologia</h3>
+                            <p data-i18n="work.hitomiDescription">A published dental website demonstration presenting treatments and making appointment enquiries easier.</p>
+                            <a class="project-link" href="https://hitomiodontologia.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="work.visit">Visit website</span><span aria-hidden="true">↗</span><span class="sr-only" data-i18n="work.hitomiSuffix"> — Hitomí Odontologia website demo (opens in a new tab)</span></a>
+                        </div>
+                    </article>
+                    <div class="project-card work-invitation"><div class="work-invitation-inner"><span class="section-label" data-i18n="work.nextLabel">A NEW PERSPECTIVE</span><h3 data-i18n="work.nextTitle">Your business. The next chapter.</h3><p data-i18n="work.nextDescription">Have something in mind? Let's turn the right idea into a digital experience that works for you.</p><a href="#orcamento" class="text-link"><span data-i18n="work.nextCta">Tell me about your project</span><span aria-hidden="true">↗</span></a></div><span class="invitation-monogram" aria-hidden="true">KQ.</span></div>
                 </div>
-
-
-                <div class="package-note">
-
-                    Não sabe qual escolher?
-
-                    <strong>
-                        Nós ajudamos você a encontrar o melhor
-                        ponto de partida.
-                    </strong>
-
-                </div>
-
+                <p class="project-image-note" data-i18n="work.imageNote">Images from the published projects. Links open in a new tab.</p>
             </div>
-
         </section>
 
+        <section class="philosophy section" id="sobre" aria-labelledby="about-title"><div class="container philosophy-grid">
+            <div class="about-identity"><p class="section-label" data-i18n="about.label">02 / THE PERSON BEHIND KQ</p><h2 id="about-title"><span data-i18n="about.title">Technology with</span><br><span class="accent-text" data-i18n="about.titleAccent">a human perspective.</span></h2><div class="about-monogram" aria-hidden="true">KQ<span>.</span></div><p class="about-location" data-i18n="about.location">Brazilian roots. A UK perspective.</p></div>
+            <div class="philosophy-content"><p class="large-text" data-i18n="about.lead">I'm Kevin Quintiliano. A technology professional, digital entrepreneur and the founder of KQ Tecnologia.</p><p data-i18n="about.description">My experience spans team management, finance, administration, systems organisation and process improvement. That business perspective shapes how I approach every digital project.</p><p data-i18n="about.approach">Working between Brazil and the United Kingdom, I build websites and practical solutions with a simple starting point: understanding what your business actually needs.</p><p data-i18n="about.principle">You bring the challenge. I bring thoughtful design, hands-on development and a commitment to making technology useful.</p><p class="section-label skills-label" data-i18n="about.toolkit">MY TOOLKIT</p><ul class="skills" aria-label="Technology and skills" data-i18n-aria="access.skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li><li>Vercel</li><li data-i18n="about.integrations">System integrations</li><li data-i18n="about.automation">Automation</li></ul><a href="#orcamento" class="text-link"><span data-i18n="about.cta">Let's get to know your business</span><span aria-hidden="true">↗</span></a></div>
+        </div></section>
 
-
-        <!-- =========================
-             IA
-        ========================== -->
-
-        <section class="ai-section section">
-
-            <div class="container ai-box">
-
-                <div class="ai-content">
-
-                    <div class="section-label">
-                        INTELIGÊNCIA ARTIFICIAL
-                    </div>
-
-                    <h2>
-                        E quando a
-                        <span>IA pode ajudar?</span>
-                    </h2>
-
-                    <p>
-
-                        Nem todo problema precisa de inteligência
-                        artificial.
-
-                    </p>
-
-                    <p>
-
-                        Mas quando ela pode simplificar um processo,
-                        reduzir tarefas repetitivas ou criar novas
-                        possibilidades para sua empresa, podemos
-                        integrá-la à solução.
-
-                    </p>
-
-                    <div class="ai-statement">
-                        Menos promessa.
-                        <strong>Mais aplicação.</strong>
-                    </div>
-
-                    <a href="#orcamento" class="button button-primary">
-                        Quero descobrir possibilidades →
-                    </a>
-
-                </div>
-
-
-                <div class="ai-visual">
-
-                    <div class="ai-core">
-                        <span>KQ</span>
-                    </div>
-
-                    <div class="ai-orbit orbit-1"></div>
-                    <div class="ai-orbit orbit-2"></div>
-                    <div class="ai-orbit orbit-3"></div>
-
-                </div>
-
+        <section class="solutions section" id="solucoes" aria-labelledby="services-title"><div class="container">
+            <div class="section-header"><div><p class="section-label" data-i18n="services.label">03 / WHAT I CAN HELP WITH</p><h2 id="services-title"><span data-i18n="services.title">The right solution.</span><br><span class="accent-text" data-i18n="services.titleAccent">Built around you.</span></h2></div><p data-i18n="services.intro">From a stronger first impression to a smoother working day. Practical support for what your business needs next.</p></div>
+            <div class="solutions-grid">
+                <article class="solution-card"><span class="solution-number">01</span><div class="solution-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01m-2 6-2 2 2 2m8-4 2 2-2 2m-3-5-2 7"/></svg></div><h3 data-i18n="services.webTitle">Website Development</h3><p data-i18n="services.webDescription">A fast, responsive website that tells your story, builds trust and makes it easy for customers to get in touch.</p><a href="#orcamento" class="service-arrow"><span data-i18n="services.webCta">Build your online presence</span><span aria-hidden="true">↗</span></a></article>
+                <article class="solution-card"><span class="solution-number">02</span><div class="solution-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 8h18M8 8v13m4-9h5m-5 4h3"/></svg></div><h3 data-i18n="services.landingTitle">Landing Pages & Redesign</h3><p data-i18n="services.landingDescription">Give a campaign a focused destination, or turn an outdated website into a clearer, more compelling customer experience.</p><a href="#orcamento" class="service-arrow"><span data-i18n="services.landingCta">Make a stronger impression</span><span aria-hidden="true">↗</span></a></article>
+                <article class="solution-card"><span class="solution-number">03</span><div class="solution-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="5" height="6" rx="1"/><rect x="16" y="3" width="5" height="6" rx="1"/><rect x="16" y="15" width="5" height="6" rx="1"/><path d="M8 12h4m4-6h-4v12h4"/></svg></div><h3 data-i18n="services.automationTitle">Digital Solutions & Automation</h3><p data-i18n="services.automationDescription">Connect tools, streamline repetitive tasks and explore useful AI integrations where they make practical sense.</p><a href="#orcamento" class="service-arrow"><span data-i18n="services.automationCta">Simplify your workflow</span><span aria-hidden="true">↗</span></a></article>
+                <article class="solution-card"><span class="solution-number">04</span><div class="solution-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M6 15v-4m6 4V7m6 8V3M4 7l5-4 5 1"/></svg></div><h3 data-i18n="services.processTitle">Business Process Optimisation</h3><p data-i18n="services.processDescription">Bring structure to information, systems and everyday operations, drawing on experience in management and finance.</p><a href="#orcamento" class="service-arrow"><span data-i18n="services.processCta">Find a better way to work</span><span aria-hidden="true">↗</span></a></article>
+                <article class="solution-card"><span class="solution-number">05</span><div class="solution-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-3a8 8 0 0 1 16 0v3M20 17a3 3 0 0 1-3 3h-4"/><rect x="2" y="11" width="4" height="7" rx="2"/><rect x="18" y="11" width="4" height="7" rx="2"/><path d="M10 20h3"/></svg></div><h3 data-i18n="services.supportTitle">Technical Support</h3><p data-i18n="services.supportDescription">Reliable help with website updates, troubleshooting, migrations and keeping your digital tools working together.</p><a href="#orcamento" class="service-arrow"><span data-i18n="services.supportCta">Get practical support</span><span aria-hidden="true">↗</span></a></article>
+                <article class="solution-card"><span class="solution-number">06</span><div class="solution-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h12M9 3v2m-3 0c0 5 4 8 7 9m0-9c-1 5-5 8-10 10m10 6 4-10 4 10m-7-3h6"/></svg></div><h3 data-i18n="services.translationTitle">Portuguese-English Translation & Content</h3><p data-i18n="services.translationDescription">Clear bilingual website content and translation to help your business communicate with audiences in Brazil and the UK.</p><a href="#orcamento" class="service-arrow"><span data-i18n="services.translationCta">Connect across languages</span><span aria-hidden="true">↗</span></a></article>
             </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             ORÇAMENTO
-        ========================== -->
-
-        <section class="contact section" id="orcamento">
-
-            <div class="container contact-grid">
-
-
-                <div class="contact-content">
-
-                    <div class="section-label">
-                        VAMOS CONVERSAR
-                    </div>
-
-                    <h2>
-                        Tem um
-                        <span>projeto</span>
-                        em mente?
-                    </h2>
-
-                    <p>
-
-                        Talvez você já saiba exatamente o que precisa.
-
-                        <br><br>
-
-                        Ou talvez só saiba que alguma coisa precisa mudar.
-
-                        <br><br>
-
-                        Nos dois casos, podemos começar pela conversa.
-
-                    </p>
-
-
-                    <div class="contact-highlight">
-
-                        Conte-nos sobre seu projeto,
-                        sua empresa ou seu desafio.
-
-                        <strong>
-                            Vamos entender juntos o melhor caminho.
-                        </strong>
-
-                    </div>
-
-
-                    <div class="contact-details">
-
-                        <div>
-                            <span>ATENDIMENTO</span>
-                            <strong>Brasil + Internacional</strong>
-                        </div>
-
-                        <div>
-                            <span>FOCO</span>
-                            <strong>Projetos sob medida</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- FORM -->
-
-                <form class="contact-form" id="contactForm">
-
-
-                    <div class="form-header">
-
-                        <span>
-                            SOLICITAR ORÇAMENTO
-                        </span>
-
-                        <h3>
-                            Vamos começar?
-                        </h3>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Nome
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Seu nome"
-                            required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="company">
-                            Empresa
-                        </label>
-
-                        <input
-                            type="text"
-                            id="company"
-                            name="company"
-                            placeholder="Nome da empresa">
-
-                    </div>
-
-
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="email">
-                                E-mail
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="voce@email.com"
-                                required>
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="phone">
-                                WhatsApp
-                            </label>
-
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="+55 (11) 99999-9999"
-                                required>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="service">
-                            O que você precisa?
-                        </label>
-
-                        <select
-                            id="service"
-                            name="service"
-                            required>
-
-                            <option value="">
-                                Selecione uma opção
-                            </option>
-
-                            <option value="landing">
-                                Landing Page
-                            </option>
-
-                            <option value="site">
-                                Site profissional
-                            </option>
-
-                            <option value="redesign">
-                                Redesign / atualização
-                            </option>
-
-                            <option value="system">
-                                Sistema personalizado
-                            </option>
-
-                            <option value="automation">
-                                Automação
-                            </option>
-
-                            <option value="ai">
-                                Inteligência Artificial
-                            </option>
-
-                            <option value="migration">
-                                Migração
-                            </option>
-
-                            <option value="consulting">
-                                Consultoria
-                            </option>
-
-                            <option value="other">
-                                Outro
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="message">
-                            Conte sobre seu projeto
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            placeholder="Conte um pouco sobre sua empresa, o que você precisa e o que gostaria de melhorar."
-                            required></textarea>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="button button-primary form-button">
-
-                        Solicitar meu orçamento
-                        <span>→</span>
-
-                    </button>
-
-
-                    <p class="form-note">
-                        Sem compromisso. Primeiro entendemos.
-                        Depois construímos.
-                    </p>
-
-
-                </form>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             FINAL CTA
-        ========================== -->
-
-        <section class="final-cta section">
-
-            <div class="container">
-
-                <div class="final-cta-content">
-
-                    <div class="section-label">
-                        KEVIN QUINTILIANO TECNOLOGIA
-                    </div>
-
-                    <h2>
-                        Seu próximo projeto
-                        <span>começa com uma conversa.</span>
-                    </h2>
-
-                    <p>
-                        Tecnologia que simplifica.
-                        Negócios que evoluem.
-                    </p>
-
-                    <a href="#orcamento" class="button button-primary">
-                        Solicitar um orçamento →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
+        </div></section>
+
+        <section class="process section" id="processo" aria-labelledby="process-title"><div class="container"><div class="section-header"><div><p class="section-label" data-i18n="process.label">04 / A CLEAR WAY FORWARD</p><h2 id="process-title"><span data-i18n="process.title">From the first conversation</span><br><span class="accent-text" data-i18n="process.titleAccent">to the final detail.</span></h2></div><p data-i18n="process.intro">A collaborative process, clear communication and considered decisions at every stage.</p></div><div class="process-grid">
+            <div class="process-item"><span>01 /</span><h3 data-i18n="process.discoverTitle">Understand</h3><p data-i18n="process.discoverDescription">We talk about your business, your audience and the problem worth solving.</p></div><div class="process-item"><span>02 /</span><h3 data-i18n="process.designTitle">Define & Design</h3><p data-i18n="process.designDescription">We agree on the scope, priorities and a design direction that feels right for your brand.</p></div><div class="process-item"><span>03 /</span><h3 data-i18n="process.buildTitle">Build & Refine</h3><p data-i18n="process.buildDescription">I develop the solution, connect what matters and test it with your feedback.</p></div><div class="process-item"><span>04 /</span><h3 data-i18n="process.launchTitle">Launch & Evolve</h3><p data-i18n="process.launchDescription">We review the details, prepare the launch and discuss support as your business grows.</p></div>
+        </div></div></section>
+
+        <section class="packages section" aria-labelledby="packages-title"><div class="container"><div class="section-header"><div><p class="section-label" data-i18n="packages.label">A STARTING POINT</p><h2 id="packages-title" data-i18n="packages.title">A good fit for your next step.</h2></div><p data-i18n="packages.intro">Every proposal is tailored to your goals. These are three ways we can start.</p></div><div class="packages-grid">
+            <article class="package"><span class="package-label" data-i18n="packages.essentialLabel">ESSENTIAL</span><h3 data-i18n="packages.essentialTitle">Start with clarity.</h3><p data-i18n="packages.essentialDescription">A focused digital presence for a business ready to be seen.</p><ul><li data-i18n="packages.essentialItem1">Bespoke landing page</li><li data-i18n="packages.essentialItem2">Responsive design & basic SEO</li><li data-i18n="packages.essentialItem3">WhatsApp enquiry journey</li><li data-i18n="packages.essentialItem4">Launch preparation</li></ul><a href="#orcamento" class="text-link"><span data-i18n="packages.cta">Discuss your project</span><span aria-hidden="true">↗</span></a></article>
+            <article class="package package-featured"><span class="package-label" data-i18n="packages.professionalLabel">PROFESSIONAL</span><h3 data-i18n="packages.professionalTitle">Build your presence.</h3><p data-i18n="packages.professionalDescription">A complete company website with room to tell your story.</p><ul><li data-i18n="packages.professionalItem1">Multi-section company website</li><li data-i18n="packages.professionalItem2">Brand-led design & content structure</li><li data-i18n="packages.professionalItem3">SEO & performance foundations</li><li data-i18n="packages.professionalItem4">Integrations scoped to your needs</li></ul><a href="#orcamento" class="text-link"><span data-i18n="packages.cta">Discuss your project</span><span aria-hidden="true">↗</span></a></article>
+            <article class="package"><span class="package-label" data-i18n="packages.bespokeLabel">BESPOKE</span><h3 data-i18n="packages.bespokeTitle">Think beyond the website.</h3><p data-i18n="packages.bespokeDescription">Practical solutions for the way your business works.</p><ul><li data-i18n="packages.bespokeItem1">Systems & tool integrations</li><li data-i18n="packages.bespokeItem2">Automation & useful AI applications</li><li data-i18n="packages.bespokeItem3">Process review & organisation</li><li data-i18n="packages.bespokeItem4">Technical support & migrations</li></ul><a href="#orcamento" class="text-link"><span data-i18n="packages.cta">Discuss your project</span><span aria-hidden="true">↗</span></a></article>
+        </div><p class="package-note" data-i18n="packages.note">Not sure where to begin? A conversation is always a good first step.</p></div></section>
+
+        <section class="contact section" id="orcamento" aria-labelledby="contact-title"><div class="container contact-grid">
+            <div class="contact-content"><p class="section-label" data-i18n="contact.label">05 / LET'S MAKE SOMETHING MATTER</p><h2 id="contact-title"><span data-i18n="contact.title">Your next chapter</span><br><span class="accent-text" data-i18n="contact.titleAccent">starts here.</span></h2><p data-i18n="contact.description">A new website, an idea to explore or a process that could work better. Tell me what you have in mind.</p><div class="contact-highlight"><strong data-i18n="contact.highlight">You don't need to have it all figured out.</strong><span data-i18n="contact.highlightDetail">We'll find the right starting point together.</span></div><div class="contact-details"><div><span data-i18n="contact.basedLabel">WORKING ACROSS</span><strong data-i18n="contact.based">Brazil & United Kingdom</strong></div><div><span data-i18n="contact.languagesLabel">LET'S TALK IN</span><strong data-i18n="contact.languages">English or Portuguese</strong></div></div><div class="contact-social"><a href="https://wa.me/5511989480263" data-whatsapp target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a><a href="https://github.com/kevinoliveira-hash" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+            <form class="contact-form" id="contactForm" novalidate aria-describedby="formNote">
+                <div class="form-header"><span data-i18n="form.label">A LITTLE ABOUT YOUR PROJECT</span><h3 data-i18n="form.title">Let's start a conversation.</h3></div>
+                <div class="form-row"><div class="form-group"><label for="name" data-i18n="form.name">Your name *</label><input type="text" id="name" name="name" placeholder="How should I call you?" data-i18n-placeholder="form.namePlaceholder" autocomplete="name" minlength="2" maxlength="100" required></div><div class="form-group"><label for="company" data-i18n="form.company">Company (optional)</label><input type="text" id="company" name="company" placeholder="Your business name" data-i18n-placeholder="form.companyPlaceholder" autocomplete="organization" maxlength="100"></div></div>
+                <div class="form-row"><div class="form-group"><label for="email" data-i18n="form.email">Email *</label><input type="email" id="email" name="email" placeholder="you@company.com" data-i18n-placeholder="form.emailPlaceholder" autocomplete="email" maxlength="254" required></div><div class="form-group"><label for="phone" data-i18n="form.phone">WhatsApp number *</label><input type="tel" id="phone" name="phone" placeholder="Include your country code" data-i18n-placeholder="form.phonePlaceholder" autocomplete="tel" inputmode="tel" maxlength="30" required></div></div>
+                <div class="form-group"><label for="service" data-i18n="form.service">What can I help you with? *</label><select id="service" name="service" required><option value="" data-i18n="form.choose">Select a service</option><option value="site" data-i18n="services.webTitle">Website Development</option><option value="landing" data-i18n="form.optionLanding">Landing Page</option><option value="redesign" data-i18n="form.optionRedesign">Website Redesign</option><option value="automation" data-i18n="services.automationTitle">Digital Solutions & Automation</option><option value="process" data-i18n="services.processTitle">Business Process Optimisation</option><option value="support" data-i18n="services.supportTitle">Technical Support</option><option value="translation" data-i18n="services.translationTitle">Portuguese-English Translation & Content</option><option value="system" data-i18n="form.optionSystem">Custom Systems & Integrations</option><option value="ai" data-i18n="form.optionAi">AI Applications</option><option value="migration" data-i18n="form.optionMigration">Migration</option><option value="consulting" data-i18n="form.optionConsulting">Technology Consultancy</option><option value="other" data-i18n="form.optionOther">Something else / Let's explore</option></select></div>
+                <div class="form-group"><label for="message" data-i18n="form.message">Tell me about your project *</label><textarea id="message" name="message" rows="4" placeholder="Your idea, your goals or the challenge you're facing…" data-i18n-placeholder="form.messagePlaceholder" minlength="15" maxlength="3000" required></textarea></div>
+                <button type="submit" class="button button-primary form-button" disabled><span data-i18n="form.submit">Continue on WhatsApp</span><span aria-hidden="true">↗</span></button>
+                <p class="form-note" id="formNote" data-i18n="form.note">This prepares a WhatsApp message. You'll review and send it there. No email is sent. * Required fields.</p>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite" aria-atomic="true"></p>
+                <a class="whatsapp-fallback text-link" id="whatsappFallback" href="https://wa.me/5511989480263" target="_blank" rel="noopener noreferrer" hidden data-i18n="form.fallback">Open your prepared message in WhatsApp</a>
+                <noscript><p class="form-note">Enable JavaScript to prepare a message, or <a href="https://wa.me/5511989480263" target="_blank" rel="noopener noreferrer">contact Kevin directly on WhatsApp</a>.</p></noscript>
+            </form>
+        </div></section>
+
+        <section class="final-cta section" aria-labelledby="final-title"><div class="container final-cta-content"><p class="section-label">KQ TECNOLOGIA</p><h2 id="final-title"><span data-i18n="final.title">Thoughtfully designed.</span><br><span class="accent-text" data-i18n="final.titleAccent">Purposefully built.</span></h2><p data-i18n="final.description">A personal approach to your digital future.</p><a href="#orcamento" class="button button-secondary"><span data-i18n="hero.contact">Let's Work Together</span><span aria-hidden="true">↗</span></a></div></section>
+        <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" data-i18n-aria="access.top" title="Back to top" data-i18n-title="access.top" tabindex="-1"><span aria-hidden="true">↑</span></button>
     </main>
-
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="footer">
-
-        <div class="container footer-grid">
-
-            <div class="footer-brand">
-
-                <div class="brand">
-
-                    <div class="brand-symbol">
-                        K<span>Q</span>
-                    </div>
-
-                    <div class="brand-name">
-
-                        <strong>
-                            KEVIN QUINTILIANO
-                        </strong>
-
-                        <small>
-                            TECNOLOGIA
-                        </small>
-
-                    </div>
-
-                </div>
-
-
-                <p>
-                    Tecnologia que simplifica.
-                    Negócios que evoluem.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#solucoes">Soluções</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#processo">Processo</a>
-                <a href="#orcamento">Contato</a>
-
-            </div>
-
-
-            <div class="footer-location">
-
-                <span>
-                    ATENDIMENTO
-                </span>
-
-                <strong>
-                    Brasil · EUA · Portugal
-                </strong>
-
-                <strong>
-                    Espanha · Reino Unido
-                </strong>
-
-            </div>
-
-        </div>
-
-
-        <div class="container footer-bottom">
-
-            <span>
-                © 2026 Kevin Quintiliano Tecnologia
-            </span>
-
-            <div>
-
-                <a href="#">
-                    Privacidade
-                </a>
-
-                <a href="#">
-                    Termos
-                </a>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-
-
-    <!-- =========================
-         WHATSAPP FLOAT
-    ========================== -->
-
-    <a
-        href="https://wa.me/5511989480263?text=Ol%C3%A1%2C%20Kevin!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Falar no WhatsApp">
-
-        <span>WhatsApp</span>
-        <strong>↗</strong>
-
-    </a>
-
-
-
-    <script src="script.js"></script>
-
+    <footer class="footer"><div class="container footer-grid"><div class="footer-brand"><a href="#inicio" class="brand" aria-label="KQ Tecnologia — home" data-i18n-aria="access.home"><span class="brand-mark" aria-hidden="true"><img src="imagens/kq-tecnologia-dourado.png" alt="" width="1254" height="1254" loading="lazy"></span><span class="brand-name"><strong>KQ</strong><small>TECNOLOGIA</small></span></a><p data-i18n="footer.description">Independent technology studio. Personal by design.</p></div><nav class="footer-links" aria-label="Footer navigation" data-i18n-aria="access.footer"><a href="#projetos" data-i18n="nav.work">Work</a><a href="#sobre" data-i18n="nav.about">About</a><a href="#solucoes" data-i18n="nav.services">Services</a><a href="#orcamento" data-i18n="nav.contact">Let's talk</a></nav><div class="footer-location"><span data-i18n="footer.connect">STAY CONNECTED</span><a href="https://github.com/kevinoliveira-hash" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://wa.me/5511989480263" data-whatsapp target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><p data-i18n="contact.based">Brazil & United Kingdom</p></div></div><div class="container footer-bottom"><span>© <span id="currentYear">2026</span> KQ Tecnologia<span data-i18n="footer.rights">. All rights reserved.</span></span><span data-i18n="footer.credit">Designed & developed by Kevin Quintiliano.</span></div></footer>
+    <a href="https://wa.me/5511989480263" data-whatsapp class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Talk to Kevin on WhatsApp (opens in a new tab)" data-i18n-aria="access.whatsapp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 8c0 4 4 8 8 8l1-2-3-1-1 1-3-3 1-1-1-3Z"/></svg><span data-i18n="contact.quick">Let's talk</span><span aria-hidden="true">↗</span></a>
 </body>
 </html>
